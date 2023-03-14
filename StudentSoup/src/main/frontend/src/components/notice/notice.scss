@@ -1,0 +1,25 @@
+@import './../../assets/scss/abstracts/_variables_color';
+@import './../../assets/scss/abstracts/_mixins';
+@import './../../assets/scss/components/buttons';
+
+.notice-container {
+  @include flex-container(column, flex-start, center);
+  margin: 75px auto 0px auto;
+  padding: 38px 64px 50px 64px;
+  width: 100%;
+  max-width: 1320px;
+  height: auto;
+  background-color: white;
+
+  & > h1 {
+    @include font-container(3.125rem, 4.375rem, $basic-color);
+
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.notice-table-wrap {
+  width: 100%;
+  height: 600px;
+}

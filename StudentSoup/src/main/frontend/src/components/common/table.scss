@@ -1,0 +1,51 @@
+@import './../../assets/scss/abstracts/_variables_color';
+@import './../../assets/scss/abstracts/_mixins';
+
+table {
+  width: 100%;
+
+  th {
+    @include font-container(1.25rem, 1.75rem, $subject-table-font-color);
+    border-bottom: 1px solid $basic-border-color;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  tr {
+    height: 43px;
+
+    td {
+      @include font-container(1rem, 1.375rem, $subject-table-font-color);
+
+      border-bottom: 1px solid $basic-border-color;
+      padding: 5px 0;
+      height: 43px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  // .subject {
+  //   padding-left: 24px;
+  //   width: 86%;
+  // }
+
+  // .date-created {
+  //   padding-right: 24px;
+  //   width: 14%;
+  // }
+
+  // .subject-post {
+  //   padding-left: 24px;
+  //   width: 86%;
+  //   text-align: left;
+  // }
+
+  // .date-created-post {
+  //   padding-right: 24px;
+  //   width: 14%;
+  //   text-align: center;
+  // }
+}
